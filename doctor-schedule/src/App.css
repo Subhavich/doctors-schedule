@@ -1,0 +1,104 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* Container for the table */
+.table-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.table-cell {
+  margin: 2px;
+  padding: 4px;
+  border-radius: 4px;
+}
+
+/* Basic table styling */
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0; /* Removes default spacing between cells */
+}
+
+/* Table header styling */
+th {
+  background-color: #f4f4f4; /* Light grey background for header */
+  border: 1px solid #ddd; /* Light border for header cells */
+  padding: 12px; /* Padding inside header cells */
+  text-align: left;
+}
+
+/* Table cell styling */
+td {
+  border: 1px solid #ddd; /* Light border for cells */
+  padding: 12px; /* Padding inside cells */
+  text-align: left;
+}
+
+/* Alternating row colors for better readability */
+tbody tr:nth-child(even) {
+  background-color: #f9f9f9; /* Light grey background for even rows */
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #ffffff; /* White background for odd rows */
+}
+
+/* Ensure the table headers and cells have adequate spacing */
+th,
+td {
+  margin: 0;
+  box-sizing: border-box; /* Includes padding and border in element's total width and height */
+}
+
+/* Optional: Add a border around the entire table */
+table {
+  border: 1px solid #ddd;
+  border-radius: 4px; /* Rounded corners for the table */
+}
+
+/* Optional: Add a hover effect for table rows */
+tbody .table-cell:hover {
+  background-color: #f1f1f1; /* Slightly darker grey on hover */
+}
